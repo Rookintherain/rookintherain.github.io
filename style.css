@@ -12,8 +12,8 @@
 }
 
 .gallery ul li img:hover{
-    transform : scale(1.5);
-    transition-duration: 0.6s;
+    transform : scale(1.1);
+    transition-duration: 0.4s;
 }
 
 .gallery ul li{
