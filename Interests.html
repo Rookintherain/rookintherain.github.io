@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>    
-<style>
-    body { background-color: thistle;}
-</style>
+    <style>
+        body { background-color: thistle;}
+        canvas 
+		{
+			border:1px solid black;
+		}
+		
+    </style>
     <title>RookInTheRain Interests </title>  
     <head>
         <link rel = "stylesheet" href = "style.css">
@@ -17,7 +22,6 @@
                 <li><a href="CV.html">CV / Resumé</a></li>
                 <li><a href="Interests.html">Interests</a></li>
                 <li><a href="Showcase.html">Showcase Page</a></li>
-                <li><a href="Blog.html">Blogs</a></li>
             </ul>
         </div>
         <div id = "welcome">Welcome to my Interests page. See what I'm up to!<br></div><br>     
@@ -43,5 +47,11 @@
             I really enjoy going on adventures with my friends to cool places like castles, forests and old ruins.<br>
             I have a passion for vintage, victorian and gothic fashion and aesthetics and these adventures really inspire me.
         </body>
-        <hr>
+        <hr><!-- put a cute toy -->
+        <body id = "welcome" > 
+            <body onload=main()>
+                <script src="main.js" ></script>
+                <script src="player.js"></script>
+            </body>
+        </body>
 </html>

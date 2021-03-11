@@ -5,30 +5,38 @@
 <html>
     <style>
         body { background-color: thistle;}
+        canvas 
+		{
+			border:1px solid black;
+		}
+		
     </style>
 <head>
     <title>RookInTheRain Home</title>  
     <link rel = "stylesheet" href = "style.css">
     <link rel = "icon" type = "image/png" href = "./Assets/rookLogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
-<body>
-    <div class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Personal.html">Personal Page</a></li>
-            <li><a href="CV.html">CV / Resumé</a></li>
-            <li><a href="Interests.html">Interests</a></li>
-            <li><a href="Showcase.html">Showcase Page</a></li>
-            <li><a href="Blog.html">Blogs</a></li>
-        </ul>
-    </div>
-    <div id = "welcome">Welcome to RookInTheRain's "Home" Page.</div><br>     
-</body> 
+<div class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Personal.html">Personal Page</a></li>
+        <li><a href="CV.html">CV / Resumé</a></li>
+        <li><a href="Interests.html">Interests</a></li>
+        <li><a href="Showcase.html">Showcase Page</a></li>
+    </ul>
+</div>
+<div id = "welcome">Welcome to RookInTheRain's "Home" Page.</div><br>     
 <hr>
 <body id = "welcome" > 
     <iframe src="https://giphy.com/embed/StmmteEznKtZC" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
     <hr>
 </body>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- put a cute toy -->
+<body onload=main()>
+    <script src="main.js" ></script>
+    <script src="player.js"></script>
+</body>
 </html> 
