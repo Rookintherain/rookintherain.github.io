@@ -21,6 +21,12 @@
      myScore = new component("30px", "Consolas", "black", 200, 40, "text");
      myScore.text="Welcome";
 
+     
+    r = Math.floor(Math.random() * 256);
+    g = Math.floor(Math.random() * 256);
+    b = Math.floor(Math.random() * 256); 
+    myEnemy = new enemy(20, 20, rgb(r,g,b), Math.floor(Math.random() *460), 200);
+
  } 
  
  /** 
@@ -114,10 +120,16 @@
      {
          myGamePiece.speedY = 2; 
      }
-
-    //update both of them
-    myGamePiece.update();
-    myGamePiece.newPos();   
+  
     myScore.update(); 
 
+    //if touching the dude
+    if (!myEnemy.collision(myGamePiece))
+    {
+        //if not collided together, update both of them
+        myGamePiece.draw();
+        myGamePiece.newPos();  
+        myEnemy.update();
+        myEnemy.newPos();
+    }
  }
