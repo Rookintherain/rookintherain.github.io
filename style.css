@@ -7,14 +7,18 @@
 }
 
 .gallery ul li img{
+    width: 300px;
+
     box-shadow: 2px 2px 5px #000000;
     border-radius: 5px;
+
+    max-height: 100%;
 }
 
-.gallery ul li img:hover{
+/* .gallery ul li img:hover{
     transform : scale(1.1);
     transition-duration: 0.4s;
-}
+} */
 
 .gallery ul li{
     padding-right: 1em;
